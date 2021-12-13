@@ -1,8 +1,8 @@
 const { response } = require("express");
 
-const readProduct = require("../service/products/readProduct");
-const readCategory = require("../service/products/readCategory");
-const searchByCategory = require("../service/products/searchByCategory");
+const readProduct = require("../service/readProduct");
+const readCategory = require("../service/readCategory");
+const searchByCategory = require("../service/searchByCategory");
 
 const readProductCtrl = async (req, res = response) => {
   const searchKeyword = req.query.searchKeyword;

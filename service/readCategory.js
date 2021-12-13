@@ -1,4 +1,4 @@
-const dbconfig = require("../../database/dbconfig");
+const dbconfig = require("../database/dbconfig");
 const util = require("util");
 
 const query = util.promisify(dbconfig.query).bind(dbconfig);
