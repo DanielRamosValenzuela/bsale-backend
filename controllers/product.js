@@ -23,7 +23,7 @@ const readProductCtrl = async (req, res = response) => {
 };
 
 const searchByCategoryCtrl = async (req, res = response) => {
-  const searchCategory = req.params.idCategory;
+  const searchCategory = req.params.id;
 
   try {
     const data = await searchByCategory(searchCategory);

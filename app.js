@@ -8,10 +8,10 @@ const {
 
 const router = Router();
 
-router.get("readproduct", readProductCtrl);
+router.get("/readproduct", readProductCtrl);
 
-router.get("readcategory", readCategoryCtrl);
+router.get("/readcategory", readCategoryCtrl);
 
-router.get("searchcategory/:idCategory", searchByCategoryCtrl);
+router.get("/searchcategory/:id", searchByCategoryCtrl);
 
 module.exports = router;
